@@ -1,0 +1,34 @@
+Empty program -> invalid (done)
+Vaild program 1 -> valid (done)
+Vaild program 2 -> valid (done)
+
+From here on, everything other than what is metion should be valid.
+
+No projects -> invalid
+No courses  -> invalid
+
+Only basic courses  -> invalid
+Only subject mod courses  -> invalid
+Only elective courses  -> invalid
+
+Only basic projects -> invalid
+Only subject mod projecs  -> invalid
+Only bachelor projects -> invalid
+
+Too many courses -> invalid
+Too few courses -> invalid
+
+Too many projects -> invalid
+Too few projects -> invalid
+
+All below should have the correct amount of ECTs:
+
+Not enough courses  -> invalid
+
+No basic courses -> invalid
+No subject mod courses -> invalid
+No Elective courses -> invalid
+
+No basic projects -> invalid
+No subject mod projects -> invalid
+No bachelor project -> invalid
