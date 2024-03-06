@@ -559,6 +559,6 @@ public class Tests {
         programme.addActivity(new SubejctModuleProject("bbbbb"));
 
         programme.addActivity(new BachelorProject("aaaaaa"));
-        assertTrue(programme.valid());
+        assertFalse(programme.valid());
     }
 }
