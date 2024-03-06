@@ -37,8 +37,8 @@ public abstract class Activity {
     }
 
     /**
-     * Returns name of the the course or project
-     * @return name of the the course or project
+     * Returns name of the course or project
+     * @return name of the course or project
      */
     public String getName(){
         return name;

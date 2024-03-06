@@ -11,7 +11,7 @@ public class Tests {
     }
 
     @Test
-    void validProgrammeTest1() throws Exception {
+    void validProgrammeTest1(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -46,7 +46,7 @@ public class Tests {
     }
 
     @Test
-    void validProgrammeTest2() throws Exception {
+    void validProgrammeTest2(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -79,7 +79,7 @@ public class Tests {
     }
 
     @Test
-    void duplicateCourse() throws Exception {
+    void duplicateCourse(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"a"));
@@ -112,7 +112,7 @@ public class Tests {
     }
 
     @Test
-    void  duplicateProject() throws Exception {
+    void  duplicateProject(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -145,7 +145,7 @@ public class Tests {
     }
 
     @Test
-    void NotEnoughECTS() throws Exception {
+    void NotEnoughECTS(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -179,7 +179,7 @@ public class Tests {
     }
 
     @Test
-    void TooManyECTS() throws Exception {
+    void TooManyECTS(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -213,7 +213,7 @@ public class Tests {
     }
 
     @Test
-    void NotEnoughProjects() throws Exception {
+    void NotEnoughProjects(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -244,7 +244,7 @@ public class Tests {
     }
 
     @Test
-    void TooManyCourses() throws Exception {
+    void TooManyCourses(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -282,7 +282,7 @@ public class Tests {
     }
 
     @Test
-    void TooFewCourses() throws Exception {
+    void TooFewCourses(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -314,7 +314,7 @@ public class Tests {
     }
 
     @Test
-    void AllBasicProjects() throws Exception {
+    void AllBasicProjects(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -349,7 +349,7 @@ public class Tests {
     }
 
     @Test
-    void AllSubModProjects() throws Exception {
+    void AllSubModProjects(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -384,7 +384,7 @@ public class Tests {
     }
 
     @Test
-    void AllBachelorProjects() throws Exception {
+    void AllBachelorProjects(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -419,7 +419,7 @@ public class Tests {
     }
 
     @Test
-    void AllBasicCourses() throws Exception {
+    void AllBasicCourses(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -454,7 +454,7 @@ public class Tests {
     }
 
     @Test
-    void AllSubModCourses() throws Exception {
+    void AllSubModCourses(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new SubjectModuleCourse(5,"a"));
         programme.addActivity(new SubjectModuleCourse(5,"b"));
@@ -489,7 +489,7 @@ public class Tests {
     }
 
     @Test
-    void AllElectiveCourses() throws Exception {
+    void AllElectiveCourses(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new ElectiveCourse(5,"a"));
         programme.addActivity(new ElectiveCourse(5,"b"));
@@ -523,7 +523,7 @@ public class Tests {
         assertFalse(programme.valid());
     }
     @Test
-    void noProjects() throws Exception {
+    void noProjects(){
         BachelorProgramme programme = new BachelorProgramme();
         programme.addActivity(new BasicCourse(5,"a"));
         programme.addActivity(new BasicCourse(5,"b"));
@@ -548,7 +548,7 @@ public class Tests {
         assertFalse(programme.valid());
     }
     @Test
-    void noCourses() throws Exception {
+    void noCourses(){
         BachelorProgramme programme = new BachelorProgramme();
 
         programme.addActivity(new BasicProject("aaaa"));

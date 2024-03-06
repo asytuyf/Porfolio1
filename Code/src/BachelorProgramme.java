@@ -36,6 +36,9 @@ public class BachelorProgramme {
         int totalBachelorProjects = 0;
 
         for(Course course : courses){
+            if(course.getEcts() != 10 && course.getEcts() != 5){
+                return false;
+            }
             totalEcts += course.getEcts();
             int dupesFound = 0;
             switch (course.getType()){
