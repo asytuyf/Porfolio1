@@ -1,3 +1,6 @@
+/**
+ * A class that represents a course
+ */
 public class Course extends Activity {
 
     public Course(int ectsPoints, String name) throws Exception{
@@ -9,6 +12,9 @@ public class Course extends Activity {
 
 }
 
+/**
+ * A class that represent a basic course
+ */
 class BasicCourse extends Course {
     public BasicCourse(int ectsPoints, String name) throws Exception {
         super(ectsPoints, name);
@@ -16,6 +22,9 @@ class BasicCourse extends Course {
     }
 }
 
+/**
+ * A class that represents a subject module course
+ */
 class SubjectModuleCourse extends Course {
     public SubjectModuleCourse(int ectsPoints, String name) throws Exception {
         super(ectsPoints, name);
@@ -23,6 +32,9 @@ class SubjectModuleCourse extends Course {
     }
 }
 
+/**
+ * A class that represents an Elective Course
+ */
 class ElectiveCourse extends Course {
     public ElectiveCourse(int ectsPoints, String name) throws Exception {
         super(ectsPoints, name);

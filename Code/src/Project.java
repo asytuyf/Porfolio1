@@ -1,3 +1,6 @@
+/**
+ * A class that represents a project
+ */
 public class Project extends Activity{
 
 
@@ -6,6 +9,9 @@ public class Project extends Activity{
     }
 }
 
+/**
+ * A class that represents a Basic project
+ */
 class BasicProject extends Project {
     public BasicProject( String name) {
         super(name);
@@ -13,6 +19,9 @@ class BasicProject extends Project {
     }
 }
 
+/**
+ * A class that represents a Subject module project
+ */
 class SubejctModuleProject extends Project {
     public SubejctModuleProject(String name) {
         super(name);
@@ -20,6 +29,9 @@ class SubejctModuleProject extends Project {
     }
 }
 
+/**
+ * A class that represents a Bachelor project
+ */
 class BachelorProject extends Project {
     public BachelorProject(String name) {
         super(name);
